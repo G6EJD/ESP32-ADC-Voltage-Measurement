@@ -20,5 +20,5 @@ float readVoltage(){
   // #define constant 64.5;  // 0-50v  range
   // #define constant 130.0; // 0-100v range
   float ADCvoltage = (float)analogRead(36) / 4095 * constant;
-  return ADCvoltage * constant; // 0-5v   range
+  return ADCvoltage;         // 0-5v   range unless constant is changed
 }
