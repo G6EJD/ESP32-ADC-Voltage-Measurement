@@ -4,6 +4,7 @@ Using the ADC to measure voltage
 The function that corrects for the ESP32 ADC input impedance loading of an attached voltage divder. I have estimated the ESp32 ADC input impedance to be 1.3Mohms
 
 float readVoltage(){
+  
   #define constant 5.9; 
   
   // 0-5v range example, should be a factor of 5, but loading increases it to 5.9
